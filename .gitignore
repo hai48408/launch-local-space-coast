@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.env.local
+scrapers/node_modules/
+*.log
+.DS_Store
