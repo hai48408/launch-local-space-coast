@@ -1,0 +1,17 @@
+{
+  "name": "coast-events-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scraper for Space Coast Events — pulls from chambers, org sites, iCal feeds",
+  "scripts": {
+    "scrape": "node scraper.js",
+    "scrape:dry": "DRY_RUN=true node scraper.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.3",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "node-ical": "^0.18.0",
+    "dotenv": "^16.4.1"
+  }
+}
