@@ -1,0 +1,158 @@
+.submit-page {
+  min-height: 100vh;
+  padding: 48px 0 80px;
+}
+
+.submit-header {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.submit-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.submit-header p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.submit-form {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  backdrop-filter: blur(8px);
+}
+
+.form-section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--white-dim);
+}
+
+.form-input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: var(--muted);
+}
+
+.form-input:focus {
+  border-color: var(--teal);
+  background: rgba(0,201,167,0.04);
+}
+
+.form-input option {
+  background: var(--deep-navy);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--white-dim);
+}
+
+.checkbox-label input[type="checkbox"] {
+  accent-color: var(--teal);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #f87171;
+  font-size: 0.85rem;
+  background: rgba(248,113,113,0.08);
+  border: 1px solid rgba(248,113,113,0.2);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+}
+
+.submit-btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Success */
+.success-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  gap: 16px;
+}
+
+.success-state h2 {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.success-state p {
+  color: var(--muted);
+  max-width: 400px;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
