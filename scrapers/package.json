@@ -1,8 +1,8 @@
 {
-  "name": "coast-events-scraper",
+  "name": "launch-local-space-coast-scraper",
   "version": "1.0.0",
   "type": "module",
-  "description": "Scraper for Space Coast Events — pulls from chambers, org sites, iCal feeds",
+  "description": "Scraper for Launch Local Space Coast — pulls from chambers, org sites, iCal feeds, and JS-rendered sites",
   "scripts": {
     "scrape": "node scraper.js",
     "scrape:dry": "DRY_RUN=true node scraper.js"
@@ -12,6 +12,8 @@
     "axios": "^1.6.7",
     "cheerio": "^1.0.0-rc.12",
     "node-ical": "^0.18.0",
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "puppeteer": "^22.0.0"
   }
 }
+
