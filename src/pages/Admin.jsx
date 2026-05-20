@@ -194,7 +194,8 @@ export default function Admin() {
                   className="form-input"
                 >
                   <option value="generic">Generic (auto-detect)</option>
-                  <option value="ical">iCal feed (.ics)</option>
+                <option value="puppeteer">Puppeteer (JS sites)</option>
+               <option value="ical">iCal feed (.ics)</option>
                   <option value="rss">RSS feed</option>
                   <option value="manual">Manual only</option>
                 </select>
